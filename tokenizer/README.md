@@ -1,5 +1,12 @@
 ### Initial README
 
-Inspired by the SO question: "How to split a string in C++?"
+Inspired by 
+ - The [SO question][SOQ]: "How to split a string in C++?"
+ - Split a string - C++ F.A.Q. http://buff.ly/XqI8Bb
 
-Originally authored by Song Ho Ahn
+
+The code in this repo is originally authored by **Song Ho Ahn**
+
+
+
+[SOQ]: http://stackoverflow.com/q/236129/307454 
