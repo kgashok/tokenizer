@@ -1,0 +1,74 @@
+1: This
+2: is
+3: a
+4: testing
+5: string.
+6: Try
+7: to
+8: modify
+9: it
+10: yourself.
+
+1: Now,
+2: the
+3: delimiters
+4: are
+5: changed
+6: to
+7: tilde  and  underscore.
+
+*** demonstrate Tokenizer's sort  ***
+Inside sort(): 
+SV size: 7
+1: Now,
+2: are
+3: changed
+4: delimiters
+5: the
+6: tilde  and  underscore.
+7: to
+
+*** demonstrate Tokenizer's longest method  ***
+Inside longest_token(): 
+longest:  for finding longest token
+
+*** demonstrate Tokenizer's longest method 2 ***
+Inside longest_token(): 
+longest: Zebb
+
+*** demonstrate the ability of the set to only retain unique strings  ***
+Inside set_of_tokens(): 
+set size: 6
+1:  duplicate coming 
+2: Now,
+3: Zeal
+4: Zebb
+5: bad*
+6: zeal
+
+*** demonstrate the ability to check for duplicates  ***
+Inside set_of_tokens(): 
+size of vector: 11
+size of set: 6
+Duplicates? yes!
+
+*** demonstrate the ability to select the nth element  ***
+1: thre5
+2: eight10101
+3: seven9999
+4: five777
+5: two4
+6: four66
+7: six88888
+8: on3
+9: four66
+----------------------
+1: eight10101
+2: five777
+3: four66
+4: four66
+5: on3
+6: seven9999
+7: six88888
+8: thre5
+9: two4

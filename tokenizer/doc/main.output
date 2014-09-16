@@ -1,0 +1,37 @@
+Tokenizer::Tokenizer()
+Tokenizer::set()
+Tokenizer::next()
+Tokenizer::set()
+Tokenizer::next()
+Tokenizer::set()
+Tokenizer::sort_tokens()
+Tokenizer::set()
+Tokenizer::longest_token()
+Tokenizer::set()
+Tokenizer::longest_token()
+Tokenizer::set()
+Tokenizer::set_of_tokens()
+Tokenizer::set()
+Tokenizer::check_for_duplicates()
+Tokenizer::set()
+Tokenizer::split()
+Tokenizer::~Tokenizer()
+
+
+*** demonstrate Tokenizer's sort  ***
+SV size: 0
+
+*** demonstrate Tokenizer's longest method  ***
+longest: 
+
+*** demonstrate Tokenizer's longest method 2 ***
+longest: 
+
+*** demonstrate the ability of the set to only retain unique strings  ***
+set size: 0
+
+*** demonstrate the ability to check for duplicates  ***
+Duplicates? yes!
+
+*** demonstrate the ability to select the nth element  ***
+----------------------

@@ -7,18 +7,13 @@
 // carriage return(\r), and form feed(\f).
 // If you want to use different delimiters, then use setDelimiter() to override
 // the delimiters. Note that the delimiter string can hold multiple characters.
-//
-//  AUTHOR: Song Ho Ahn (song.ahn@gmail.com)
-// CREATED: 2005-05-25
-// UPDATED: 2011-03-08
 ///////////////////////////////////////////////////////////////////////////////
-
 #ifndef TOKENIZER_H
 #define TOKENIZER_H
 
 #include <string>
 #include <vector>
-
+#include <set>
 // default delimiter string (space, tab, newline, carriage return, form feed)
 const std::string DEFAULT_DELIMITER = " \t\v\n\r\f";
 
@@ -38,10 +33,14 @@ public:
     std::string next();                                 // return the next token, return "" if it ends
 
     std::vector<std::string> split();                   // return array of tokens from current cursor
+    std::vector<std::string> sort_tokens(); 			// sort the tokens and return it in a vector
+    std::set<std::string> set_of_tokens();				// returns a set of unique tokens
+
+    std::string longest_token();						// returns the longest token in the string
+    std::string find_token(unsigned int n = 0);         // returns the nth element in an sorted list
+    bool check_for_duplicates();						// returns true if there are duplicate tokens
 
 protected:
-
-
 private:
     void skipDelimiter();                               // ignore leading delimiters
     bool isDelimiter(char c);                           // check if the current char is delimiter
@@ -50,7 +49,6 @@ private:
     std::string token;                                  // output string
     std::string delimiter;                              // delimiter string
     std::string::const_iterator currPos;                // string iterator pointing the current position
-
 };
 
 #endif // TOKENIZER_H
