@@ -92,5 +92,16 @@ int main(int argc, char* argv[])
        	cout << ++counter << ": " << str.find_token(i) << endl;
     }
 
+    // generate a map containing (token, position_in_string) as a pair
+    cout << endl << "*** demonstrate the ability to build a map() ****" << endl;
+    str.set("thre5 eight10101 seven9999 five777 two4 four66 six88888 on3 four66");
+    map<int, string> stm = str.build_map();
+    counter = 0;
+
+    for ( unsigned int i = 0; i < stm.size(); i++ ) {
+    	map<int, string>::iterator mp = stm.find(i);
+      	cout << ++counter << ": " << mp->second << endl;
+    }
+
     return 0;
 }

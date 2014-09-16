@@ -1,8 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Tokenizer.h
-// ===========
 // General purpose string tokenizer (C++ string version)
-//
 // The default delimiters are space(" "), tab(\t, \v), newline(\n),
 // carriage return(\r), and form feed(\f).
 // If you want to use different delimiters, then use setDelimiter() to override
@@ -13,6 +11,7 @@
 #include <string>
 #include <vector>
 #include <set>
+#include <map>
 // default delimiter string (space, tab, newline, carriage return, form feed)
 const std::string DEFAULT_DELIMITER = " \t\v\n\r\f";
 class Tokenizer
@@ -36,6 +35,7 @@ public:
     std::string longest_token();                        // returns the longest token in the string
     std::string find_token(unsigned int n = 0);         // returns the nth element in an sorted list
     bool check_for_duplicates();                        // returns true if there are duplicate tokens
+    std::map<int, std::string> build_map();             // returns a map of tokens and their position in the string
 protected:
 private:
     void skipDelimiter();                               // ignore leading delimiters

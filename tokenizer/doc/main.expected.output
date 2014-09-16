@@ -72,3 +72,15 @@ Duplicates? yes!
 7: six88888
 8: thre5
 9: two4
+
+*** demonstrate the ability to build a map() ****
+Tokenizer::build_map()
+1: thre5
+2: eight10101
+3: seven9999
+4: five777
+5: two4
+6: four66
+7: six88888
+8: on3
+9: four66

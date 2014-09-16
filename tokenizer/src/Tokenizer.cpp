@@ -99,7 +99,6 @@ void Tokenizer::skipDelimiter()
 }
 
 
-
 ///////////////////////////////////////////////////////////////////////////////
 // return true if the current character is delimiter
 ///////////////////////////////////////////////////////////////////////////////
@@ -204,4 +203,9 @@ Tokenizer::check_for_duplicates()
     return dummy;
 }
 
+std::map<int, string> Tokenizer::build_map() {
+    std::map<int, string> dummy;
 
+    cerr << "Tokenizer::build_map()" << endl;
+	return dummy;
+}

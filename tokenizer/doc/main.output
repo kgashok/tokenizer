@@ -52,6 +52,9 @@ Duplicates? yes!
 7: 
 8: 
 9: 
+
+*** demonstrate the ability to build a map() ****
+
 Tokenizer::sort_tokens()
 Tokenizer::longest_token()
 Tokenizer::longest_token()
@@ -66,3 +69,4 @@ Tokenizer::find_token()
 Tokenizer::find_token()
 Tokenizer::find_token()
 Tokenizer::find_token()
+Tokenizer::build_map()
