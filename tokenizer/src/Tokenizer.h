@@ -30,12 +30,12 @@ public:
     std::string next();                                 // return the next token, return "" if it ends
 
     std::vector<std::string> split();                   // return array of tokens from current cursor
-    std::vector<std::string> sort_tokens(); 			// sort the tokens and return it in a vector
-    std::set<std::string> set_of_tokens();				// returns a set of unique tokens
+    std::vector<std::string> sort_tokens();             // sort the tokens and return it in a vector
+    std::set<std::string> set_of_tokens();              // returns a set of unique tokens
 
-    std::string longest_token();						// returns the longest token in the string
+    std::string longest_token();                        // returns the longest token in the string
     std::string find_token(unsigned int n = 0);         // returns the nth element in an sorted list
-    bool check_for_duplicates();						// returns true if there are duplicate tokens
+    bool check_for_duplicates();                        // returns true if there are duplicate tokens
 protected:
 private:
     void skipDelimiter();                               // ignore leading delimiters
