@@ -1,22 +1,21 @@
-Tokenizer::Tokenizer()
-Tokenizer::set()
-Tokenizer::next()
-Tokenizer::set()
-Tokenizer::next()
-Tokenizer::set()
-Tokenizer::sort_tokens()
-Tokenizer::set()
-Tokenizer::longest_token()
-Tokenizer::set()
-Tokenizer::longest_token()
-Tokenizer::set()
-Tokenizer::set_of_tokens()
-Tokenizer::set()
-Tokenizer::check_for_duplicates()
-Tokenizer::set()
-Tokenizer::split()
-Tokenizer::~Tokenizer()
+1: This
+2: is
+3: a
+4: testing
+5: string.
+6: Try
+7: to
+8: modify
+9: it
+10: yourself.
 
+1: Now,
+2: the
+3: delimiters
+4: are
+5: changed
+6: to
+7: tilde  and  underscore.
 
 *** demonstrate Tokenizer's sort  ***
 SV size: 0
@@ -34,4 +33,36 @@ set size: 0
 Duplicates? yes!
 
 *** demonstrate the ability to select the nth element  ***
+1: thre5
+2: eight10101
+3: seven9999
+4: five777
+5: two4
+6: four66
+7: six88888
+8: on3
+9: four66
 ----------------------
+1: 
+2: 
+3: 
+4: 
+5: 
+6: 
+7: 
+8: 
+9: 
+Tokenizer::sort_tokens()
+Tokenizer::longest_token()
+Tokenizer::longest_token()
+Tokenizer::set_of_tokens()
+Tokenizer::check_for_duplicates()
+Tokenizer::find_token()
+Tokenizer::find_token()
+Tokenizer::find_token()
+Tokenizer::find_token()
+Tokenizer::find_token()
+Tokenizer::find_token()
+Tokenizer::find_token()
+Tokenizer::find_token()
+Tokenizer::find_token()
