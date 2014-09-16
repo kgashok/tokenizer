@@ -10,13 +10,11 @@
 ///////////////////////////////////////////////////////////////////////////////
 #ifndef TOKENIZER_H
 #define TOKENIZER_H
-
 #include <string>
 #include <vector>
 #include <set>
 // default delimiter string (space, tab, newline, carriage return, form feed)
 const std::string DEFAULT_DELIMITER = " \t\v\n\r\f";
-
 class Tokenizer
 {
 public:
@@ -24,7 +22,6 @@ public:
     Tokenizer();
     Tokenizer(const std::string& str, const std::string& delimiter=DEFAULT_DELIMITER);
     ~Tokenizer();
-
     // set string and delimiter
     void set(const std::string& str, const std::string& delimiter=DEFAULT_DELIMITER);
     void setString(const std::string& str);             // set source string only
@@ -39,7 +36,6 @@ public:
     std::string longest_token();						// returns the longest token in the string
     std::string find_token(unsigned int n = 0);         // returns the nth element in an sorted list
     bool check_for_duplicates();						// returns true if there are duplicate tokens
-
 protected:
 private:
     void skipDelimiter();                               // ignore leading delimiters

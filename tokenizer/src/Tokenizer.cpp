@@ -118,8 +118,7 @@ Tokenizer::split()
  * Returns: std::vector<std::string>
  * Effects:
  */
-std::vector<std::string>
-Tokenizer::sort_tokens()
+std::vector<std::string> Tokenizer::sort_tokens()
 {
     std::vector<std::string> dummy;
 
